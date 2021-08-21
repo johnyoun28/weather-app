@@ -21,9 +21,9 @@ const WeatherForm = (props) => {
     return (
         <div>
             <form onSubmit={submitHandler}>
-                <input type="text" onChange={changeHandler} value={formValues} placeholder="Enter Location"> 
+                <input className='form-input' type="text" onChange={changeHandler} value={formValues} placeholder="Enter Location"> 
                 </input>
-                <button>submit</button>
+                <button>Search</button>
             </form>
         </div>
     )

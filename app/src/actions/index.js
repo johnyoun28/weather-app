@@ -6,6 +6,7 @@ export const FETCH_WEATHER_SUCCESS = "FETCH_WEATHER_SUCCESS"
 export const FETCH_WOEID_START = "FETCH_WOEID_START"
 export const FETCH_WOEID_SUCCESS = "FETCH_WOEID_SUCCESS"
 
+
 export const fetchWeather = (woeid) => (dispatch) => {
     dispatch({type: FETCH_WEATHER_START })
     axios.get(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
