@@ -33,12 +33,8 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <h1>{props.weather.title}</h1>
       <WeatherForm />
-
-      <h2>{props.weather.title}</h2>
-
-
 
       {
         props.isLoading ? (renderLoader()) :

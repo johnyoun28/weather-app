@@ -9,6 +9,23 @@
 
 .weather-card {
   background-color: aliceblue;
+  border-radius: 50px;
+  margin: auto;
+  width: 50%;
+  border: 5px solid black;
+  margin-top: 20px;
+}
+
+.form-input {
+  width: 20%;
+  border-radius: 25px;
+}
+::placeholder {
+  text-align: center;
+}
+
+button {
+  border-radius: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

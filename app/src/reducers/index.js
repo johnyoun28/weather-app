@@ -4,6 +4,7 @@ const initialState = {
     weather: [],
     woeid: 2442047,
     isLoading: true,
+    icon: "",
     error: ""
 
 }
