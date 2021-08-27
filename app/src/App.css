@@ -9,23 +9,30 @@
 
 .weather-card {
   background-color: aliceblue;
-  border-radius: 50px;
-  margin: auto;
-  width: 50%;
-  border: 5px solid black;
-  margin-top: 20px;
+  border: 0;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  position: relative;
+  margin: 15px;
 }
 
 .form-input {
-  width: 20%;
-  border-radius: 25px;
+  width: 30%;
+  border-radius: 5px;
+  position: relative;
+  height: 3vh;
 }
 ::placeholder {
   text-align: center;
+  color: grey;
 }
 
 button {
-  border-radius: 15px;
+  height: 27px;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
