@@ -9,12 +9,11 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from 'react-loader-spinner'
 
 
-function App(props) {
-  const { fetchWeather } = props;
+const App = ({fetchWeather, woeid, weather, isLoading}) => {
 
   useEffect(() => {
-    fetchWeather(props.woeid)
-  },[fetchWeather, props.woeid])
+    fetchWeather(woeid)
+  },[fetchWeather, woeid])
 
   const renderLoader = () => {
     return (
@@ -33,12 +32,12 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>{props.weather.title}</h1>
+      <h1>{weather.title}</h1>
       <WeatherForm />
 
       {
-        props.isLoading ? (renderLoader()) :
-        <WeatherList weathers={props.weather}/>
+        isLoading ? (renderLoader()) :
+        <WeatherList weathers={weather}/>
       }
 
     </div>
